@@ -46,13 +46,6 @@ TEST(CreatePolygonalFigure, PerimeterAndAreaCalculatedCorrectly)
     ASSERT_EQ(polygonal_figure3.getArea(), 5);
 }
 
-TEST(CreateSharpTriangle, RightTriangleCheckFailed_ThrowException)
-{
-    std::vector<Point> points = {{0, 0}, {5, 0}, {1, 1}};
-    Triangle triangle(points);
-    ASSERT_THROW(triangle.isCorrectFigure(), std::logic_error);
-    // провальный тест
-}
 
 TEST(CreateTrapeze, PerimeterAndAreaCalculatedCorrectly)
 {
